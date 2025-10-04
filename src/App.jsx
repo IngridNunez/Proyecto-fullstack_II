@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import ProductList from './pages/ProductList.jsx';
+import { ProductList } from './pages/ProductList.jsx';
 import Navbar from './components/Navbar.jsx';
 import React from 'react';
-
-
+import { productos } from './db/productos.js';
 
 // Lista de productos 
 
@@ -13,10 +12,10 @@ function App() {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(25000);
   const [category, setCategory] = useState("Todos");
-  const [filtreredProducts, setFiltredProducts] = useState(products);
+  const [filtreredProducts, setFiltredProducts] = useState(productos);
 
   const handleFilter = () => {
-    const newfiltredProducts = products.filter(product => {
+    const newfiltredProducts = productos.filter(product => {
       const priceInrange = product.price >= minPrice && product.price <= maxPrice;
       const inSelectedCategory = category === "Todos" || product.category === category;
       return priceInrange && inSelectedCategory;
@@ -45,24 +44,24 @@ function App() {
         </label>
         <label>
           Categoría:
-          <select value={category} onChange={e=>setCategory(e.target.value)}>
-            <option value ='Todos'>Todos</option>
-            <option value ='Tortas Circulares'>Tortas Circulares</option>
-            <option value ='Tortas Cuadradas'>Tortas Cuadradas</option>
-            <option value ='Postres Individuales'>Postres Individuales</option>
-            <option value ='Sin Azúcar'>Sin Azúcar</option>
-            <option value ='Tradicional'>Tradicional</option>
-            <option value ='Sin Gluten'>Sin Gluten</option>
+          <select value={category} onChange={e => setCategory(e.target.value)}>
+            <option value='Todos'>Todos</option>
+            <option value='Tortas Circulares'>Tortas Circulares</option>
+            <option value='Tortas Cuadradas'>Tortas Cuadradas</option>
+            <option value='Postres Individuales'>Postres Individuales</option>
+            <option value='Sin Azúcar'>Sin Azúcar</option>
+            <option value='Tradicional'>Tradicional</option>
+            <option value='Sin Gluten'>Sin Gluten</option>
           </select>
         </label>
         <button onClick={handleFilter}>Aplicar Filtros</button>
       </div>
-      
-      <ProductList products={filtreredProducts} />
 
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {/* <ProductList products={filtreredProducts} /> */}
+
+
+      <ProductList min = {minPrice} max = {maxPrice} category = {category} />
+      
     </div>
   );
 }
