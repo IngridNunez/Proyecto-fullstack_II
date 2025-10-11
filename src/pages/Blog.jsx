@@ -49,16 +49,16 @@ const Blog = () => {
             </div>
             
             <div className="container to mb-5">
-                <div className="container text-center">
+                <div className="container text-center ">
                     <div className="row align-items-start">
                         {recetas.slice(0, 3).map((receta) => (
-                            <div key={receta.id} className="col">
-                                <div className="card pastel" id={receta.id}>
-                                    <img src={receta.imagen} className="card-img-top" alt={receta.titulo} />
-                                    <div className="card-body">
+                            <div key={receta.id} className="col-md-4 col-sm-6 mb-4">
+                                <div className="card pastel product-card h-100" id={receta.id}>
+                                    <img src={receta.imagen} className="card-img-top product-img" alt={receta.titulo} />
+                                    <div className="card-body d-flex flex-column">
                                         <h5 className="card-title">{receta.titulo}</h5>
                                         <p className="card-text">{receta.descripcion}</p>
-                                        <button className="btn btn-primary">Ver receta</button>
+                                        <button className="btn btn-primary mt-auto">Ver receta</button>
                                     </div>
                                 </div>
                             </div>
@@ -71,13 +71,13 @@ const Blog = () => {
                 <div className="container text-center">
                     <div className="row align-items-start">
                         {recetas.slice(3, 6).map((receta) => (
-                            <div key={receta.id} className="col">
-                                <div className="card pastel" id={receta.id}>
-                                    <img src={receta.imagen} className="card-img-top" alt={receta.titulo} />
-                                    <div className="card-body">
+                            <div key={receta.id} className="col-md-4 col-sm-6 mb-4">
+                                <div className="card pastel product-card h-100" id={receta.id}>
+                                    <img src={receta.imagen} className="card-img-top product-img" alt={receta.titulo} />
+                                    <div className="card-body d-flex flex-column">
                                         <h5 className="card-title">{receta.titulo}</h5>
                                         <p className="card-text">{receta.descripcion}</p>
-                                        <button className="btn btn-primary">Ver receta</button>
+                                        <button className="btn btn-primary mt-auto">Ver receta</button>
                                     </div>
                                 </div>
                             </div>

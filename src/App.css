@@ -29,10 +29,6 @@
   color: #888;
 }
 
-h1{
-  background-color: rgb(236, 153, 180);
-}
-
 .titulo {
   font-size: 2.5rem;
   color: #333;
@@ -67,7 +63,7 @@ h1{
 .card-title {
   font-family: 'Pacifico', cursive;
   font-size: 1.3rem;
-  color: #a0522d;
+  color: #e91e63; /* ← Cambiar de #a0522d a rosa */
   margin-bottom: 0.5rem;
 }
 
@@ -81,168 +77,300 @@ h1{
 .price {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #d2691e;
+  color: #e91e63; /* ← Cambiar de #d2691e a rosa */
   margin-bottom: 1rem;
 }
 
 .btn-primary {
-  background-color: #d2691e;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1.2rem;
-  font-weight: 600;
-  transition: background 0.2s;
+  background: linear-gradient(135deg, #e91e63, #ff4081) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3) !important;
 }
 
 .btn-primary:hover {
-  background-color: #a0522d;
+  background: linear-gradient(135deg, #c2185b, #e91e63) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
 }
 
-/* Contacto.css */
+/* Botones específicos para las categorías del home */
+.category-card .btn,
+.card .btn-primary,
+.btn-outline-primary {
+  background: linear-gradient(135deg, #e91e63, #ff4081) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3) !important;
+}
+
+.category-card .btn:hover,
+.card .btn-primary:hover,
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #c2185b, #e91e63) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Para los botones "Ver más" de las cards del home */
+.card .btn,
+.product-card .btn {
+  background: linear-gradient(135deg, #e91e63, #ff4081) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3) !important;
+}
+
+.card .btn:hover,
+.product-card .btn:hover {
+  background: linear-gradient(135deg, #c2185b, #e91e63) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* También para los enlaces que actúan como botones */
+a.btn-primary {
+  background: linear-gradient(135deg, #e91e63, #ff4081) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3) !important;
+}
+
+a.btn-primary:hover {
+  background: linear-gradient(135deg, #c2185b, #e91e63) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Contacto - Usar toda la pantalla */
+.contact-header,
+.contact-content {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.contact-header .container,
+.contact-content .container {
+  max-width: none;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Header con fondo rosa suave */
 .contact-header {
-  
-    color: rgb(0, 0, 0);
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-header::before {
-    position: absolute;
-    opacity: 0.3;
+  background: linear-gradient(135deg, 
+    rgba(252, 228, 236, 0.95) 0%,
+    rgba(248, 187, 208, 0.85) 50%,
+    rgba(252, 228, 236, 0.95) 100%
+  );
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
 }
 
 .contact-header h1 {
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  color: #d63384;
+  margin-bottom: 1rem;
 }
 
-.contact-header .lead {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    font-weight: 300;
+.contact-header p {
+  font-size: 1.3rem;
+  color: #454447;
 }
 
+/* Contenido principal expandido */
 .contact-content {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
+  min-height: 60vh;
 }
 
+.contact-content .row {
+  margin: 0;
+}
+
+.contact-content .col-md-6 {
+  padding: 2rem 3rem;
+}
+
+/* Cards de información más grandes */
 .info-item {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border-left: 4px solid rgb(236, 153, 180);
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e91e63;
 }
 
 .info-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(233, 30, 99, 0.15);
 }
 
 .info-icon {
-    font-size: 1.5rem;
-    width: 50px;
-    height: 50px;
-    background: rgb(236, 153, 180);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  padding: 1rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 
-.info-content h5 {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.info-content p {
-    color: #6c757d;
-    margin-bottom: 0;
-    line-height: 1.6;
-}
-
-.social-links {
-    margin-top: 0.5rem;
-}
-
-.social-link {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border: 2px solid rgb(236, 153, 180);
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.social-link:hover {
-    background-color: #ff6b6b;
-    color: white;
-    transform: translateY(-2px);
-    text-decoration: none;
-}
-
+/* Formulario mejorado */
 form {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.form-label {
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  height: fit-content;
 }
 
 .form-control {
-    border: 2px solid #e9ecef;
-    border-radius: 10px;
-    padding: 0.75rem 1rem;
-    transition: all 0.3s ease;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-
-.btn-primary {
-    background: rgb(236, 153, 180);
-    border: none;
-    border-radius: 25px;
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+.form-control:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
+/* Página de Iniciar Sesión */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, 
+    rgba(252, 228, 236, 0.95) 0%,
+    rgba(248, 187, 208, 0.85) 50%,
+    rgba(252, 228, 236, 0.95) 100%
+  );
+  padding: 2rem;
 }
 
+.login-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(214, 51, 132, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d63384;
+}
+
+/* Labels con estilo de título Pacifico */
+.login-form .titulo {
+  font-family: 'Pacifico', cursive !important;
+  color: #d63384 !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Inputs mejorados */
+.login-form .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.login-form .form-control:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+/* Botón de envío */
+.btn-submit-login {
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e91e63, #ff4081) !important;
+  border: none;
+  margin-top: 1rem;
+}
+
+.btn-submit-login:hover {
+  background: linear-gradient(135deg, #c2185b, #e91e63) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .contact-header {
-        padding: 3rem 0 !important;
-    }
-    
-    .contact-header h1 {
-        font-size: 2.5rem;
-    }
-    
-    .info-item {
-        padding: 1rem;
-    }
-    
-    .info-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-    
-    form {
-        padding: 1.5rem;
-    }
+  .contact-header .container,
+  .contact-content .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .contact-content .col-md-6 {
+    padding: 1.5rem;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.1rem;
+  }
+  
+  form {
+    padding: 1.5rem;
+  }
+  
+  .login-form {
+    padding: 2rem;
+    margin: 1rem;
+  }
 }
 
 /* blog */
@@ -259,7 +387,7 @@ form {
 }
 
 .blog h1 {
-  color: #b46a55;
+  color: #e91e63; /* ← Cambiar de #b46a55 a rosa */
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
@@ -287,7 +415,7 @@ form {
 }
 
 .post h2 {
-  color: #b46a55;
+  color: #e91e63; /* ← Cambiar de #b46a55 a rosa */
   margin-bottom: 10px;
 }
 
@@ -360,6 +488,161 @@ form {
     .col-md-3 {
         margin-bottom: 1rem;
     }
+}
+
+/* Variables CSS */
+:root {
+  --primary-color: #d63384;
+  --secondary-color: #6f42c1;
+}
+
+/* Fuente Pacifico para títulos y navbar */
+.navbar-brand,
+h1, h2, h3, h4, h5, h6,
+.titulo {
+  font-family: 'Pacifico', cursive !important;
+  color: var(--primary-color);
+}
+
+/* Estilo específico para el navbar brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--primary-color) !important;
+}
+
+/* Hero section con fondo rosa suave difuminado - SOLO EN SU ESPACIO */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;                    /* ← Ancho completo */
+  margin-left: calc(-50vw + 50%);  /* ← Romper solo este contenedor */
+  margin-right: calc(-50vw + 50%); /* ← Romper solo este contenedor */
+  background: linear-gradient(135deg, 
+    rgba(252, 228, 236, 0.95) 0%,     /* Rosa muy suave */
+    rgba(248, 187, 208, 0.85) 25%,   /* Rosa pastel suave */
+    rgba(255, 182, 193, 0.75) 50%,   /* Rosa claro suave */
+    rgba(255, 228, 225, 0.85) 75%,   /* Rosa muy claro */
+    rgba(252, 228, 236, 0.95) 100%   /* Rosa muy suave */
+  );
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Patrón de fondo sutil para textura */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, rgba(255, 182, 193, 0.2) 1px, transparent 1px);
+  background-size: 60px 60px, 40px 40px;
+  z-index: 1;
+}
+
+/* Contenido del hero */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;  /* ← Contenido centrado */
+  margin: 0 auto;     /* ← Centrado */
+  padding: 0 2rem;    /* ← Padding lateral */
+}
+
+/* Título del hero con fuente Pacifico */
+.hero-title {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 3.5rem;
+  color: #d63384; /* Tu color principal rosa */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+}
+
+/* Subtítulo del hero */
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #000000; /* Tu color secundario */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Botón del hero */
+.hero-btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
+
+/* Imagen del hero - MÁS PEQUEÑA */
+.hero-image {
+  max-width: 45%; /* ← Cambiar de 65% a 45% */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(214, 51, 132, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.08);
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 85vh;
+    padding: 2rem 0;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .hero-image {
+    max-width: 80%; /* ← Un poco más grande en móvil */
+    margin-top: 2rem;
+  }
+  
+  .hero-btn {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-image {
+    max-width: 85%;
+  }
+}
+
+/* Suavizar la transición entre hero y siguiente sección */
+.hero-section + section {
+  border-top: 1px solid rgba(255, 182, 193, 0.3);
 }
 
 

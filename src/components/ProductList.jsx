@@ -2,12 +2,16 @@ import React from 'react';
 import { productos } from '../db/productos.js';
 
 
-import ProductCard from '../components/ProductCard';
+import ProductCard from './ProductCard.jsx';
 
 
 
 
-export  function ProductList( { min, max, category }) {
+export  function ProductList({ min, max, category }) {
+
+
+
+
   // Usando los productos importados directamente
 
   /*const data = async () => {
@@ -28,6 +32,13 @@ export  function ProductList( { min, max, category }) {
 
   const resultados =  data();
   const products = resultados.productos;*/
+  
+
+
+  
+
+
+
 
   return (
     <>
@@ -51,5 +62,13 @@ export  function ProductList( { min, max, category }) {
         </div>
       </div>
     </>
+
+    
   );
+
+
+  
 }
+
+
+
