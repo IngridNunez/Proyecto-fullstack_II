@@ -32,7 +32,7 @@ function Home() {
                         </div>
                         <h3>Tortas</h3>
                         <p>Cuadradas, circulares y especiales para toda ocasión</p>
-                        <Link to="/productos.html?categoria=tortas" className="btn btn-sm btn-outline-primary">Ver más</Link>
+                        <Link to="/productos" className="btn btn-sm btn-outline-primary">Ver más</Link>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
@@ -42,7 +42,7 @@ function Home() {
                         </div>
                         <h3>Postres Individuales</h3>
                         <p>Deliciosos postres para disfrutar en porciones individuales</p>
-                        <Link to="/productos.html?categoria=postres" className="btn btn-sm btn-outline-primary">Ver más</Link>
+                        <Link to="/productos" className="btn btn-sm btn-outline-primary">Ver más</Link>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
@@ -52,7 +52,7 @@ function Home() {
                         </div>
                         <h3>Productos Especiales</h3>
                         <p>Opciones sin azúcar, sin gluten y veganas</p>
-                        <Link to="/productos.html?categoria=especiales" className="btn btn-sm btn-outline-primary">Ver más</Link>
+                        <Link to="/productos" className="btn btn-sm btn-outline-primary">Ver más</Link>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 mb-4">
@@ -107,9 +107,9 @@ function Home() {
                     <h4>Pastelería Mil Sabores</h4>
                     <p>50 años endulzando momentos especiales con las mejores recetas tradicionales y modernas de la repostería chilena.</p>
                     <div className="social-links">
-                        <Link to="#" className="social-link">Facebook</Link>
-                        <Link to="#" className="social-link">Instagram</Link>
-                        <Link to="#" className="social-link">Twitter</Link>
+                        <a href="#" className="social-link">Facebook</a>
+                        <a href="#" className="social-link">Instagram</a>
+                        <a href="#" className="social-link">Twitter</a>
                     </div>
                 </div>
                 <div className="col-md-4 mb-4">
