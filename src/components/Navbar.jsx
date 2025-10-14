@@ -18,7 +18,7 @@ function NavbarComponent() {
 
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/registro">📝 Registro</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/inicio_sesion">🔐 Iniciar Sesión</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/login">🔐 Iniciar Sesión</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
