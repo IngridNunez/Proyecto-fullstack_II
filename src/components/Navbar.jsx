@@ -11,7 +11,6 @@ function NavbarComponent() {
           <Nav className="ms-auto"> 
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
-            <Nav.Link as={Link} to="/nosotros">Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
             <Nav.Link as={Link} to="/carrito">Carrito</Nav.Link>
