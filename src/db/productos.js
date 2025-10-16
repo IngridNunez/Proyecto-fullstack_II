@@ -24,7 +24,7 @@ export const productos = [
     description: "Clásica torta Red Velvet con capas de bizcocho rojo y crema de queso.",
     category: "Tradicional",
     categoryLabel: "Tradicional",
-    image: "img/images3.jpeg"
+    image: "img/images5.jpeg"
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const productos = [
     price: 17500,
     description: "Elaborada sin productos de origen animal, pero con todo el sabor de una torta tradicional.",
     category: "Tortas Circulares",
-    categoryLabel: "Tortas Circulares",
+    categoryLabel: "Sin Gluten",
     image: "img/images7.jpeg"
   },
   {

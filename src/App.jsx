@@ -9,6 +9,7 @@ import Navbar from './components/Navbar.jsx';
 import Registro from "./pages/registro.jsx";
 import { ContextoFiltros } from "./Contexts/ContextoFiltros.jsx";
 import { AuthProvider } from '../src/contexts/AuthContext';
+import DetalleDeProducto from "./pages/detalleDeProducto.jsx";
 
 function App(){
   return(
@@ -24,7 +25,7 @@ function App(){
             <Route path="/blog" element={<Blog />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
-            {/*<Route path="/detalle_producto" element={<DetalleDeProducto />} />*/}
+            <Route path="/detalle_producto/:id" element={<DetalleDeProducto />} />
           </Routes>
         </BrowserRouter>
       </ContextoFiltros>
