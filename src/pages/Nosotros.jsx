@@ -10,7 +10,7 @@ const About = () => {
 
     return (
         <>
-            <section className="about-header py-5">
+            <section className="contact-header py-5">
                 <div className="container text-center">
                     <h1>Nuestra Historia</h1>
                     <p>50 años endulzando momentos especiales</p>
