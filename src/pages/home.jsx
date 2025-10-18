@@ -1,12 +1,3 @@
-<<<<<<< Updated upstream
-import Navbar from "../components/Navbar";
-
-
-function home() {
-  return (
-    <>
-      <h1>Bienvenido a nuestra Pastelería</h1>
-=======
 import React from 'react';
 import {Link} from 'react-router-dom';
 
@@ -145,12 +136,11 @@ function Home() {
             </div>
         </div>
     </footer>
->>>>>>> Stashed changes
     </>
-  );
+  )
 }
 
-export default home;
+export default Home;
 
 
     
